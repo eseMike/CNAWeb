@@ -173,10 +173,16 @@
 }
 .team .section-header .section-heading {
   font-family: "Mulish", sans-serif;
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: 700;
   color: #1f4388;
   margin-bottom: 2rem;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .team .section-header .section-heading {
+    font-size: 5rem;
+  }
 }
 .team .section-header .underline {
   width: 15rem;
@@ -578,32 +584,6 @@ body {
   font-size: 16px;
 }
 
-/* Estilos para dispositivos móviles */
-/* Ajustes generales para mobile-first */
-body {
-  font-size: 16px;
-}
-
-/* Botón de cierre del menú hamburguesa */
-.close-menu {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  font-size: 2.5rem;
-  color: white;
-  background: none;
-  border: none;
-  cursor: pointer;
-  z-index: 1500;
-  display: block;
-}
-
-/* Estilos para dispositivos móviles */
-/* Ajustes generales para mobile-first */
-body {
-  font-size: 16px;
-}
-
 /* Botón de cierre del menú hamburguesa */
 .close-menu {
   position: absolute;
@@ -685,9 +665,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
   .services .service {
     max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .team {
     padding: 2rem;
@@ -746,6 +730,10 @@ body {
   }
   .services .service {
     max-width: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .team .cards-wrapper {
     flex-wrap: wrap;

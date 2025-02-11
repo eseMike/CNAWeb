@@ -34,7 +34,10 @@
 }
 
 .change .hamburguer-menu {
-  right: 42rem;
+  right: 37rem;
+  @media (min-width: 768px) {
+    right: 42rem;
+  }
 }
 
 .header {
@@ -424,7 +427,7 @@
 .banner {
   position: absolute;
   top: 30%;
-  left: 15%;
+  left: 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -571,5 +574,213 @@
   box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.4);
   i {
     font-size: 3rem;
+  }
+}
+
+/* Ajustes generales para mobile-first */
+body {
+  font-size: 16px;
+}
+
+/* Estilos para dispositivos móviles */
+/* Ajustes generales para mobile-first */
+body {
+  font-size: 16px;
+}
+
+/* Botón de cierre del menú hamburguesa */
+.close-menu {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2.5rem;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1500;
+  display: block;
+}
+
+/* Estilos para dispositivos móviles */
+/* Ajustes generales para mobile-first */
+body {
+  font-size: 16px;
+}
+
+/* Botón de cierre del menú hamburguesa */
+.close-menu {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2.5rem;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1500;
+  display: block;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  .hamburguer-menu {
+    top: 1rem;
+    right: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    z-index: 1600;
+    .line {
+      height: 0.2rem;
+    }
+  }
+
+  .sidebar {
+    width: 100%;
+    right: -100%;
+    position: fixed;
+    transition: right 0.5s;
+    z-index: 1400;
+    .menu {
+      .menu-item {
+        font-size: 2rem;
+      }
+    }
+    .close-menu {
+      display: block;
+      position: absolute;
+      top: 1rem;
+      right: 1.5rem;
+      z-index: 1700;
+    }
+  }
+
+  .change .sidebar {
+    right: 0;
+  }
+
+  .header {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .banner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      top: auto;
+      left: auto;
+
+      img {
+        width: 250px;
+      }
+      button {
+        width: 18rem;
+        height: 4.5rem;
+        font-size: 1.4rem;
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  .about-us {
+    .section-header {
+      padding: 4rem 0;
+      .section-heading {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  .services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .service {
+      max-width: 90%;
+    }
+  }
+
+  .team {
+    padding: 2rem;
+    .cards-wrapper {
+      flex-direction: column;
+      align-items: center;
+      .card {
+        width: 100%;
+        max-width: 30rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  .contact {
+    .contact-wrapper {
+      width: 100%;
+      flex-direction: column;
+      height: auto;
+      .contact-left {
+        width: 100%;
+        height: 300px;
+      }
+      .contact-right {
+        width: 100%;
+        padding: 3rem;
+      }
+    }
+  }
+
+  .footer {
+    height: auto;
+    .footer-content {
+      flex-direction: column;
+      text-align: center;
+      .social-list {
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+/* Estilos para tabletas */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .sidebar {
+    width: 30rem;
+    right: -30rem;
+  }
+  .change .sidebar {
+    right: 0;
+  }
+
+  .header {
+    .banner {
+      left: 10%;
+      img {
+        width: 400px;
+      }
+    }
+  }
+
+  .services {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    .service {
+      max-width: 80%;
+    }
+  }
+
+  .team {
+    .cards-wrapper {
+      flex-wrap: wrap;
+      justify-content: center;
+      .card {
+        width: 45%;
+        margin-bottom: 2rem;
+      }
+    }
   }
 }

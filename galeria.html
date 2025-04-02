@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colegio Nueva Era Americano</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- fonts -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,400;0,600;1,300;1,400;1,600&family=Muli:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="hamburguer-menu">
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
+      </div>
+      <header class="header">
+        <div class="img-wrapper">
+          <img src="images/bgGaleria.png" alt="Image" />
+        </div>
+        <div class="banner">
+          <img src="./assets/logos/LogoCNEA_Vector-02.png" alt="" />
+          <button>Conócenos</button>
+        </div>
+      </header>
+
+      <section class="sidebar">
+        <ul class="menu">
+          <li class="menu-item">
+            <a href="index.html" class="menu-link" data-content="Inicio"
+              >Inicio</a
+            >
+          </li>
+          <li class="menu-item">
+            <a href="conocenos.html" class="menu-link" data-content="Conocenos"
+              >Conócenos</a
+            >
+          </li>
+          <li class="menu-item">
+            <a href="servicios.html" class="menu-link" data-content="Servicios"
+              >Servicios</a
+            >
+          </li>
+          <li class="menu-item">
+            <a href="galeria.html" class="menu-link" data-content="Galería"
+              >Galería</a
+            >
+          </li>
+          <!-- <li class="menu-item">
+            <a href="#" class="menu-link" data-content="Contacto">Contacto</a>
+          </li> -->
+        </ul>
+
+        <div class="social-media">
+          <a href="#" class="social-media-icon">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <!-- <a href="#" class="social-media-icon">
+                  <i class="fab fa-twitter"></i>
+               </a> -->
+          <a href="#" class="social-media-icon">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </section>
+
+      <!-- Galery  -->
+      <section class="gallery-section">
+        <h2 class="section-title">Galería</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="images/galery/img1.jpg" alt="Imagen 1" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/galery/img2.jpg" alt="Imagen 2" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/galery/img3.jpg" alt="Imagen 3" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/galery/img4.jpg" alt="Imagen 4" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/galery/img5.jpg" alt="Imagen 5" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/galery/img6.jpg" alt="Imagen 6" />
+          </div>
+        </div>
+
+        <!-- Modal de imagen ampliada -->
+        <div class="modal">
+          <button class="close-btn">&times;</button>
+          <img src="" alt="Imagen ampliada" />
+        </div>
+      </section>
+
+      <!-- Contact  -->
+      <section class="contact">
+        <div class="contact-wrapper">
+          <div class="contact-left"></div>
+          <div class="contact-right">
+            <h1 class="contact-heading">Contáctanos.</h1>
+            <form>
+              <div class="input-group">
+                <input type="text" id="name" placeholder=" " />
+                <label for="name">Nombre</label>
+              </div>
+              <div class="input-group">
+                <input type="number" id="phone" placeholder=" " />
+                <label for="phone">Teléfono</label>
+              </div>
+              <div class="input-group">
+                <input type="email" id="email" placeholder=" " />
+                <label for="email">Email</label>
+              </div>
+              <div class="input-group">
+                <label class="message" for="message"></label>
+                <div class="input-group">
+                  <textarea id="message" placeholder=" "></textarea>
+                  <label for="message">Mensaje</label>
+                </div>
+              </div>
+              <button>Enviar</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-content">
+          <div
+            style="display: flex; flex-direction: column; align-items: center"
+          >
+            <img
+              class="footer-logo"
+              src="./assets/LogoCNEA_Vector-03.png"
+              alt="Logo"
+            />
+            <p class="copyright">
+              Todos los derechos reservados copyright © <span id="year"></span>
+            </p>
+          </div>
+          <div class="social-list">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <a href="#" class="scroll-btn">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+    <script src="script.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script src="tilt.js"></script>
+  </body>
+</html>

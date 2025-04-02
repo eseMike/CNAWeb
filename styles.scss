@@ -270,7 +270,8 @@
   }
   .contact-left {
     width: 50%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
       url('https://images.pexels.com/photos/3184351/pexels-photo-3184351.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
     background-size: cover;
   }
@@ -767,6 +768,546 @@ body {
         width: 45%;
         margin-bottom: 2rem;
       }
+    }
+  }
+}
+
+//Conócenos
+
+/* Estilos generales */
+body {
+  font-family: 'Mulish', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #1f4388;
+  margin: 2rem 0;
+}
+
+/* Sección de introducción */
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem;
+
+  .content {
+    max-width: 50%;
+  }
+
+  img {
+    width: 300px;
+    display: block;
+    margin: auto;
+    @media (min-width: 768px) {
+      width: 400px;
+    }
+  }
+}
+
+/* ==== Slider tipo carrusel ==== */
+
+.slider-carousel {
+  text-align: center;
+  padding: 3rem 0;
+  background-color: #f9f9f9;
+  .slider {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+  .slides {
+    display: flex;
+    gap: 2.5rem;
+    animation: slideCarousel 30s linear infinite;
+    img {
+      width: 250px;
+      min-width: 250px;
+      height: auto;
+      border-radius: 10px;
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+@keyframes slideCarousel {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+  .slider-carousel .slides {
+    gap: 1.5rem;
+    img {
+      width: 180px;
+      min-width: 180px;
+    }
+  }
+}
+
+/* Pausar animación al pasar el mouse */
+.slider-carousel .slider:hover .slides {
+  animation-play-state: paused;
+}
+
+/* Misión y Visión */
+.mission-vision {
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem;
+
+  .mission,
+  .vision {
+    max-width: 40%;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+
+    .content {
+      max-width: 100%;
+    }
+  }
+
+  .mission-vision {
+    flex-direction: column;
+    text-align: center;
+
+    .mission,
+    .vision {
+      max-width: 100%;
+    }
+  }
+}
+
+/* Áreas Académicas */
+.info-section {
+  background-color: #0033a0; // Azul institucional
+  padding: 4rem 2rem;
+  text-align: center;
+
+  .section-title {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+
+    .card {
+      background-color: #fff;
+      border-radius: 20px;
+      padding: 1rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      max-width: 280px;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+
+      img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 15px;
+        margin-bottom: 1rem;
+      }
+
+      .card-title {
+        font-weight: 600;
+        color: #0033a0;
+
+        .subtitle {
+          display: block;
+          font-size: 0.875rem;
+          color: #333;
+          font-weight: 400;
+          margin-top: 0.25rem;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+// Certificación
+/* ==== CERTIFICACIÓN ==== */
+.certification-section {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 4rem 2rem;
+
+  .subtitle {
+    color: #999;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+
+  .section-title {
+    color: #1f4388;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .cert-text {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .certification-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cert-img {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (max-width: 768px) {
+  .certification-section {
+    .cert-img {
+      max-width: 250px;
+    }
+
+    .section-title {
+      font-size: 1.6rem;
+    }
+
+    .cert-text {
+      font-size: 1rem;
+    }
+  }
+}
+
+// Mission vission
+.mision-vision-section {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  .mision,
+  .vision {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1.5rem; // ⬅️ antes estaba en 2rem, ahora más pegado
+
+    img {
+      width: 100%;
+      max-width: 450px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease; // ⬅️ transición suave
+
+      &:hover {
+        transform: scale(1.03); // ⬅️ efecto al pasar el cursor
+      }
+    }
+
+    .mision-texto,
+    .vision-texto {
+      max-width: 600px;
+
+      .mv-titulo {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #1f4388;
+        margin-bottom: 1rem;
+        position: relative;
+
+        &::after {
+          content: '';
+          display: block;
+          width: 60px;
+          height: 3px;
+          background: #1f4388;
+          margin-top: 0.5rem;
+        }
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #333;
+      }
+    }
+  }
+
+  .vision {
+    flex-direction: row-reverse;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .mision-vision-section {
+    .mision,
+    .vision {
+      flex-direction: column;
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+// Services
+.services-section {
+  background-color: #0038a8;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: white;
+
+  .subtitle {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    color: #ccc;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 3rem;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+  }
+
+  .service-card {
+    background: white;
+    border-radius: 20px;
+    padding: 1rem;
+    text-align: center;
+    color: #0038a8;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition:
+      transform 0.6s ease,
+      box-shadow 0.6s ease;
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(-10px) scale(1.05) rotateZ(-1deg);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 15px;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-weight: 600;
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .services-section .service-card img {
+    height: 120px;
+  }
+}
+
+// Galery
+.gallery-section {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  text-align: center;
+
+  .subtitle {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    color: #888;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    border-bottom: 3px solid #1f4388;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    color: #1f4388;
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+
+      img {
+        width: 100%;
+        height: 220px; // <-- Agregado para uniformar
+        object-fit: cover; // <-- Hace el recorte bonito
+        display: block;
+        transition: transform 0.3s ease;
+      }
+
+      &:hover {
+        transform: scale(1.03);
+
+        img {
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+
+  /* Modal */
+  .modal {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+
+    &.show {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    &.hide {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    img {
+      max-width: 90%;
+      max-height: 80vh;
+      object-fit: contain;
+      border-radius: 10px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+      animation: fadeZoom 0.3s ease-in-out;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 3rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      font-size: 1.5rem;
+      color: #1f4388;
+      cursor: pointer;
+      z-index: 1001;
+      transition: background 0.3s;
+
+      &:hover {
+        background: #1f4388;
+        color: #fff;
+      }
+    }
+  }
+
+  @keyframes fadeZoom {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
+
+@keyframes fadeZoom {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .gallery-section {
+    padding: 3rem 1.5rem;
+
+    .section-title {
+      font-size: 1.6rem;
+    }
+
+    .gallery-grid {
+      gap: 1rem;
     }
   }
 }

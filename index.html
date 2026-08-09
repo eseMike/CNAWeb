@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,297 +13,421 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,400;0,600;1,300;1,400;1,600&family=Muli:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <div class="container">
-      <div class="hamburguer-menu">
-        <div class="line line-1"></div>
-        <div class="line line-2"></div>
-        <div class="line line-3"></div>
-      </div>
-      <header class="header">
-        <div class="img-wrapper">
-          <img src="images/bgSchool2.jpg" alt="Image" />
-        </div>
-        <div class="banner">
-          <img src="./assets/logos/LogoCNEAfull.png" alt="" />
-          <button>Conócenos</button>
-        </div>
+      <nav class="top-nav" aria-label="Navegación principal">
+        <a class="phone-link" href="tel:+525556544639">
+          <i class="fas fa-phone-alt" aria-hidden="true"></i>
+          <span>55 5654-4639</span>
+        </a>
+
+        <ul class="top-nav-menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#oferta-academica">Oferta Académica</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#idiomas">Idiomas</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#contacto">Contáctanos</a></li>
+        </ul>
+      </nav>
+
+      <header class="new-header">
+        <section class="hero-redesign">
+          <div class="hero-white-shape">
+            <img
+              class="hero-logo"
+              src="./assets/redesign/logos/LogoCNEAfull.png"
+              alt="Colegio Nueva Era Americano"
+            />
+
+            <h1>Primaria Bilingüe</h1>
+
+            <a class="hero-cta" href="#conocenos">Conócenos</a>
+          </div>
+
+          <div
+            class="hero-photo-grid"
+            aria-label="Comunidad escolar del Colegio Nueva Era Americano"
+          >
+            <img
+              src="./assets/redesign/images/hero/Portada 1.png"
+              alt="Estudiantes del Colegio Nueva Era Americano"
+            />
+
+            <img
+              src="./assets/redesign/images/hero/Portada 2.png"
+              alt="Grupo de estudiantes del Colegio Nueva Era Americano"
+            />
+
+            <img
+              src="./assets/redesign/images/hero/Portada 3.png"
+              alt="Alumnas del Colegio Nueva Era Americano"
+            />
+          </div>
+        </section>
       </header>
 
-      <section class="sidebar">
-        <ul class="menu">
-          <li class="menu-item">
-            <a href="index.html" class="menu-link" data-content="Inicio"
-              >Inicio</a
-            >
-          </li>
-          <li class="menu-item">
-            <a href="conocenos.html" class="menu-link" data-content="Conocenos"
-              >Conócenos</a
-            >
-          </li>
-          <li class="menu-item">
-            <a href="servicios.html" class="menu-link" data-content="Servicios"
-              >Servicios</a
-            >
-          </li>
-          <li class="menu-item">
-            <a href="galeria.html" class="menu-link" data-content="Galería"
-              >Galería</a
-            >
-          </li>
-          <!-- <li class="menu-item">
-            <a href="#" class="menu-link" data-content="Contacto">Contacto</a>
-          </li> -->
-        </ul>
+      <section class="intro-section" id="conocenos">
+        <div class="intro-logo-wrapper">
+          <img
+            src="./assets/redesign/logos/LogoCNEA_Vector-03.png"
+            alt="Colegio Nueva Era Americano"
+            class="intro-logo"
+          />
+        </div>
 
-        <div class="social-media">
-          <a href="#" class="social-media-icon">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <!-- <a href="#" class="social-media-icon">
-                  <i class="fab fa-twitter"></i>
-               </a> -->
-          <a href="#" class="social-media-icon">
-            <i class="fab fa-instagram"></i>
-          </a>
+        <div class="intro-card">
+          <p>
+            En el Colegio Nueva Era Americano creemos que la educación es la
+            base para construir un futuro lleno de oportunidades. Somos una
+            institución comprometida con la excelencia académica, la formación
+            en valores y el desarrollo integral de cada uno de nuestros
+            estudiantes.
+          </p>
+
+          <p>
+            A través de una educación bilingüe, innovadora y centrada en el
+            alumno, impulsamos el pensamiento crítico, la creatividad, el
+            liderazgo y el uso responsable de la tecnología, preparando a niños
+            y niñas para enfrentar con éxito los retos de un mundo en constante
+            evolución.
+          </p>
         </div>
       </section>
 
-      <!-- About us  -->
-      <section class="about-us">
-        <div class="section-header">
-          <h1 class="section-heading">Colegio Nueva Era <br />Americano</h1>
-          <div class="underline"></div>
+      <!-- Oferta Académica -->
+      <section class="academic-offer" id="oferta-academica">
+        <div class="academic-offer-header">
+          <h2 class="academic-offer-title">
+            <span>Oferta</span>
+            <span>Académica</span>
+          </h2>
+
+          <p class="academic-offer-intro">
+            En el Colegio Nueva Era Americano ofrecemos una educación primaria
+            integral que combina excelencia académica, innovación y formación en
+            valores. Nuestro modelo educativo impulsa el desarrollo intelectual,
+            emocional, físico y creativo de cada estudiante, brindándole las
+            herramientas necesarias para enfrentar con éxito los retos del
+            futuro.
+          </p>
         </div>
 
-        <div class="services">
-          <div class="service">
-            <div class="service-header">
-              <i class="fas fa-pen-nib"></i>
-              <h3>Educación Física</h3>
+        <div class="academic-offer-grid">
+          <!-- Sistema Bilingüe -->
+          <article class="academic-item" id="idiomas">
+            <h3>Sistema<br />Bilingüe</h3>
+
+            <img
+              src="./assets/redesign/images/academic/Sistema bilingüe.png"
+              alt="Sistema bilingüe del Colegio Nueva Era Americano"
+            />
+
+            <p>
+              Fortalecemos el dominio del idioma inglés mediante un programa
+              integral apoyado por la plataforma Cambridge, desarrollando las
+              habilidades de comunicación y preparando a nuestros alumnos para
+              obtener certificaciones internacionales.
+            </p>
+          </article>
+
+          <!-- Computación -->
+          <article class="academic-item">
+            <h3>Computación</h3>
+
+            <img
+              src="./assets/redesign/images/academic/Computación.png"
+              alt="Clase de computación del Colegio Nueva Era Americano"
+            />
+
+            <p>
+              Desarrollamos competencias digitales a través del uso responsable
+              de la tecnología, fomentando el pensamiento lógico, la creatividad
+              y el aprendizaje de herramientas que serán fundamentales para su
+              futuro.
+            </p>
+          </article>
+
+          <!-- Expresión Corporal -->
+          <article class="academic-item">
+            <h3>Expresión<br />Corporal</h3>
+
+            <img
+              src="./assets/redesign/images/academic/Expresión corporal.png"
+              alt="Expresión corporal en el Colegio Nueva Era Americano"
+            />
+
+            <p>
+              Desarrollamos la creatividad, la coordinación y la confianza,
+              promoviendo la expresión de emociones e ideas mediante el
+              movimiento y el lenguaje corporal.
+            </p>
+          </article>
+        </div>
+
+        <div class="academic-offer-grid academic-offer-grid-secondary">
+          <!-- Música -->
+          <article class="academic-item">
+            <h3>Música</h3>
+
+            <img
+              src="./assets/redesign/images/academic/Música.png"
+              alt="Música en el Colegio Nueva Era Americano"
+            />
+
+            <p>
+              Impulsamos la sensibilidad artística, la concentración y el
+              trabajo colaborativo, favoreciendo el desarrollo integral a través
+              de experiencias musicales enriquecedoras.
+            </p>
+          </article>
+
+          <!-- Educación Física -->
+          <article class="academic-item">
+            <h3>Educación<br />Física</h3>
+
+            <img
+              src="./assets/redesign/images/academic/Educación fisica.png"
+              alt="Educación física en el Colegio Nueva Era Americano"
+            />
+
+            <p>
+              Fomentamos hábitos de vida saludables, el trabajo en equipo, la
+              disciplina y el desarrollo de habilidades motrices mediante
+              actividades deportivas y recreativas.
+            </p>
+          </article>
+
+          <!-- Danza -->
+          <article class="academic-item">
+            <h3>Danza</h3>
+
+            <img
+              src="./assets/redesign/images/academic/Danza folclorica.png"
+              alt="Danza en el Colegio Nueva Era Americano"
+            />
+
+            <p>
+              Promovemos el amor por nuestras raíces y tradiciones a través de
+              la danza, fortaleciendo la expresión corporal, la coordinación, la
+              disciplina y el trabajo en equipo mientras nuestros alumnos
+              descubren la riqueza cultural de México.
+            </p>
+          </article>
+        </div>
+
+        <div class="academic-mindfulness">
+          <h2 class="academic-mindfulness-title">
+            <span>Oferta</span>
+            <span>Académica</span>
+          </h2>
+
+          <article class="mindfulness-item">
+            <h3>Mindfulness</h3>
+
+            <img
+              src="./assets/redesign/images/academic/Mindfullness.jpg"
+              alt="Mindfulness en el Colegio Nueva Era Americano"
+            />
+
+            <p>
+              Como institución certificada en Mindfulness, promovemos el
+              bienestar emocional, la atención plena y la autorregulación,
+              ayudando a nuestros estudiantes a fortalecer su concentración,
+              manejar sus emociones y desarrollar una convivencia positiva.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Servicios -->
+      <section class="services-redesign" id="servicios">
+        <div class="services-redesign-header">
+          <h2>Servicios</h2>
+
+          <p>
+            En Colegio Nueva Era Americano ofrecemos servicios que complementan
+            la formación académica y personal de nuestros alumnos, brindando
+            experiencias que enriquecen su aprendizaje, desarrollan sus talentos
+            y acompañan a las familias.
+          </p>
+        </div>
+
+        <div class="extracurricular-label">
+          <span>Actividades extracurriculares</span>
+        </div>
+
+        <div class="services-redesign-grid">
+          <!-- Jazz -->
+          <article class="service-redesign-item">
+            <h3>Jazz</h3>
+
+            <img
+              src="./assets/redesign/images/services/Jazz.png"
+              alt="Jazz en el Colegio Nueva Era Americano"
+            />
+
+            <p>
+              Desarrolla la expresión artística, la coordinación, el ritmo y la
+              confianza a través de la danza.
+            </p>
+          </article>
+
+          <!-- Taekwondo -->
+          <article class="service-redesign-item">
+            <h3>Taekwondo</h3>
+
+            <img
+              src="./assets/redesign/images/services/Tae Kwon Do.png"
+              alt="Taekwondo en el Colegio Nueva Era Americano"
+            />
+
+            <p>
+              Fomenta la disciplina, el respeto, la seguridad y la
+              perseverancia, fortaleciendo el desarrollo físico y personal.
+            </p>
+          </article>
+
+          <!-- Ajedrez -->
+          <article class="service-redesign-item">
+            <h3>Ajedrez</h3>
+
+            <img
+              src="./assets/redesign/images/services/Ajedrez.jpg"
+              alt="Ajedrez en el Colegio Nueva Era Americano"
+            />
+
+            <p>
+              Fortalece el pensamiento estratégico, la concentración, la
+              resolución de problemas y la toma de decisiones.
+            </p>
+          </article>
+        </div>
+
+        <!-- Horario Extendido -->
+        <div class="extended-services">
+          <div class="extended-services-heading">
+            <h2>Servicios</h2>
+
+            <div class="extended-top-row">
+              <div class="extended-label">
+                <span>Horario Extendido</span>
+              </div>
+
+              <img
+                class="extended-clock"
+                src="./assets/redesign/icons/Reloj.png"
+                alt="Horario extendido del Colegio Nueva Era Americano"
+              />
             </div>
 
-            <div>
-              <p class="service-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, et
-                at? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
-                et at?
-              </p>
-            </div>
+            <p class="extended-description">
+              Contamos con horario extendido hasta las 6:30 p.m., ofreciendo a
+              las familias mayor flexibilidad y tranquilidad mientras sus hijos
+              permanecen en un entorno seguro.
+            </p>
           </div>
 
-          <div class="service">
-            <div class="service-header">
-              <i class="fas fa-paint-roller"></i>
-              <h3>Computación</h3>
-            </div>
-
-            <div>
-              <p class="service-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, et
-                at? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
-                et at?
-              </p>
-            </div>
-          </div>
-
-          <div class="service">
-            <div class="service-header">
-              <i class="fas fa-pencil-alt"></i>
-              <h3>Danza folclórica</h3>
-            </div>
-
-            <div>
-              <p class="service-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, et
-                at? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
-                et at?
-              </p>
-            </div>
-          </div>
-
-          <div class="service">
-            <div class="service-header">
-              <i class="fas fa-paint-brush"></i>
-              <h3>Expresión corporal</h3>
-            </div>
-
-            <div>
-              <p class="service-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, et
-                at? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
-                et at?
-              </p>
-            </div>
-          </div>
-
-          <div class="service">
-            <div class="service-header">
-              <i class="fas fa-ruler-combined"></i>
-              <h3>Música</h3>
-            </div>
-
-            <div>
-              <p class="service-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, et
-                at? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
-                et at?
-              </p>
-            </div>
-          </div>
-
-          <div class="service">
-            <div class="service-header">
-              <i class="fas fa-building"></i>
+          <div class="extended-services-grid">
+            <!-- Comedor -->
+            <article class="extended-service-item">
               <h3>Comedor</h3>
-            </div>
 
-            <div>
-              <p class="service-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, et
-                at? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
-                et at?
-              </p>
-            </div>
-          </div>
+              <div class="extended-service-content">
+                <i
+                  class="fas fa-utensils extended-service-icon"
+                  aria-hidden="true"
+                ></i>
 
-          <div class="service">
-            <div class="service-header">
-              <i class="fas fa-user-graduate"></i>
+                <p>
+                  Ofrecemos servicio de comedor en un espacio seguro y adecuado,
+                  brindando a nuestros alumnos una opción práctica durante su
+                  jornada escolar.
+                </p>
+              </div>
+            </article>
+
+            <!-- Club de Tareas -->
+            <article class="extended-service-item">
               <h3>Club de Tareas</h3>
-            </div>
-            <div>
-              <p class="service-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, et
-                at? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
-                et at?
-              </p>
-            </div>
-          </div>
 
-          <div class="service">
-            <div class="service-header">
-              <i class="fas fa-music"></i>
-              <h3>Jazz</h3>
-            </div>
-            <div>
-              <p class="service-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, et
-                at? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
-                et at?
-              </p>
-            </div>
-          </div>
+              <div class="extended-service-content">
+                <i
+                  class="fas fa-book-open extended-service-icon"
+                  aria-hidden="true"
+                ></i>
 
-          <div class="service">
-            <div class="service-header">
-              <i class="fas fa-hand-rock"></i>
-              <h3>Taekwondo</h3>
-            </div>
-            <div>
-              <p class="service-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, et
-                at? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
-                et at?
-              </p>
-            </div>
-          </div>
-
-          <div class="service">
-            <div class="service-header">
-              <i class="fas fa-child"></i>
-              <h3>Ballet</h3>
-            </div>
-            <div>
-              <p class="service-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, et
-                at? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
-                et at?
-              </p>
-            </div>
-          </div>
-
-          <div class="service">
-            <div class="service-header">
-              <i class="fas fa-clock"></i>
-              <h3>Horario Extendido</h3>
-            </div>
-            <div>
-              <p class="service-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, et
-                at? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
-                et at?
-              </p>
-            </div>
-          </div>
-
-          <div class="about-us-image-wrapper">
-            <img src="./assets/logos/LogoCNEAfull.png" alt="" />
+                <p>
+                  Brindamos acompañamiento académico después de clases para
+                  realizar tareas, reforzar aprendizajes y fomentar hábitos de
+                  estudio.
+                </p>
+              </div>
+            </article>
           </div>
         </div>
       </section>
 
-      <!-- team  -->
+      <!-- Galería -->
+      <section class="gallery-section" id="galeria">
+        <h2 class="gallery-title">Galería</h2>
 
-      <section class="team">
-        <div class="section-header">
-          <h1 class="section-heading">Servicio de idiomas</h1>
-          <div class="underline"></div>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img
+              src="images/galery/img1.jpg"
+              alt="Galería Colegio Nueva Era Americano 1"
+            />
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="images/galery/img2.jpg"
+              alt="Galería Colegio Nueva Era Americano 2"
+            />
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="images/galery/img3.jpg"
+              alt="Galería Colegio Nueva Era Americano 3"
+            />
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="images/galery/img4.jpg"
+              alt="Galería Colegio Nueva Era Americano 4"
+            />
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="images/galery/img5.jpg"
+              alt="Galería Colegio Nueva Era Americano 5"
+            />
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="images/galery/img6.jpg"
+              alt="Galería Colegio Nueva Era Americano 6"
+            />
+          </div>
         </div>
 
-        <div class="cards-wrapper">
-          <div class="card" data-tilt>
-            <div class="card-image-wrapper">
-              <img src="/images/person-1.jpg" alt="Img" />
-            </div>
-            <div class="card-info">
-              <h2>Primaria Bilingüe</h2>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque
-                molestiae provident dolor modi deserunt ipsum doloremque
-                corrupti quasi.
-              </p>
-              <button>Saber más</button>
-            </div>
-          </div>
-          <div class="card" data-tilt>
-            <div class="card-image-wrapper">
-              <img src="/images/person-2.jpg" alt="Img" />
-            </div>
-            <div class="card-info">
-              <h2>Sistema Bilingüe</h2>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque
-                molestiae provident dolor modi deserunt ipsum doloremque
-                corrupti quasi.
-              </p>
-              <button>Saber más</button>
-            </div>
-          </div>
-          <div class="card" data-tilt>
-            <div class="card-image-wrapper">
-              <img src="/images/person-3.jpg" alt="Img" />
-            </div>
-            <div class="card-info">
-              <h2>Certificaciones Cambridge</h2>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque
-                molestiae provident dolor modi deserunt ipsum doloremque
-                corrupti quasi.
-              </p>
-              <button>Saber más</button>
-            </div>
-          </div>
+        <div class="modal">
+          <button class="close-btn" aria-label="Cerrar imagen">&times;</button>
+          <img src="" alt="Imagen ampliada de la galería" />
         </div>
       </section>
 
       <!-- Contact  -->
-      <section class="contact">
+      <section class="contact" id="contacto">
         <div class="contact-wrapper">
           <div class="contact-left"></div>
           <div class="contact-right">
@@ -314,7 +438,7 @@
                 <label for="name">Nombre</label>
               </div>
               <div class="input-group">
-                <input type="number" id="phone" placeholder=" " />
+                <input type="tel" id="phone" placeholder=" " />
                 <label for="phone">Teléfono</label>
               </div>
               <div class="input-group">
@@ -322,11 +446,8 @@
                 <label for="email">Email</label>
               </div>
               <div class="input-group">
-                <label class="message" for="message"></label>
-                <div class="input-group">
-                  <textarea id="message" placeholder=" "></textarea>
-                  <label for="message">Mensaje</label>
-                </div>
+                <textarea id="message" placeholder=" "></textarea>
+                <label for="message">Mensaje</label>
               </div>
               <button>Enviar</button>
             </form>
@@ -336,9 +457,7 @@
 
       <footer class="footer">
         <div class="footer-content">
-          <div
-            style="display: flex; flex-direction: column; align-items: center"
-          >
+          <div class="footer-brand">
             <img
               class="footer-logo"
               src="./assets/LogoCNEA_Vector-03.png"
@@ -361,11 +480,5 @@
       <i class="fas fa-arrow-up"></i>
     </a>
     <script src="script.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.js"
-      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-      crossorigin="anonymous"
-    ></script>
-    <script src="tilt.js"></script>
   </body>
 </html>

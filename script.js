@@ -21,10 +21,12 @@ const navMenu = document.querySelector('.top-nav-menu');
 
 if (navToggle && navMenu) {
   const navToggleLabel = navToggle.querySelector('.sr-only');
+  const nav = navToggle.closest('.top-nav');
   const setNavMenuState = (isOpen) => {
     const isMobile = window.matchMedia('(max-width: 768px)').matches;
 
     navMenu.classList.toggle('is-open', isOpen);
+    if (nav) nav.classList.toggle('is-open', isOpen);
     navMenu.inert = isMobile && !isOpen;
     navMenu.setAttribute('aria-hidden', String(isMobile && !isOpen));
     navToggle.setAttribute('aria-expanded', String(isOpen));

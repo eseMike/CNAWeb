@@ -15,6 +15,49 @@ if (scrollBtn) {
   });
 }
 
+// Menú de navegación móvil de la portada
+const navToggle = document.querySelector('.top-nav-toggle');
+const navMenu = document.querySelector('.top-nav-menu');
+
+if (navToggle && navMenu) {
+  const navToggleLabel = navToggle.querySelector('.sr-only');
+  const setNavMenuState = (isOpen) => {
+    const isMobile = window.matchMedia('(max-width: 768px)').matches;
+
+    navMenu.classList.toggle('is-open', isOpen);
+    navMenu.inert = isMobile && !isOpen;
+    navMenu.setAttribute('aria-hidden', String(isMobile && !isOpen));
+    navToggle.setAttribute('aria-expanded', String(isOpen));
+
+    if (navToggleLabel) {
+      navToggleLabel.textContent = isOpen
+        ? 'Cerrar menú de navegación'
+        : 'Abrir menú de navegación';
+    }
+  };
+
+  const closeNavMenu = () => {
+    setNavMenuState(false);
+  };
+
+  navToggle.addEventListener('click', () => {
+    const isOpen = navToggle.getAttribute('aria-expanded') === 'true';
+    setNavMenuState(!isOpen);
+  });
+
+  navMenu.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', closeNavMenu);
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') closeNavMenu();
+  });
+
+  window.addEventListener('resize', closeNavMenu);
+
+  closeNavMenu();
+}
+
 // Slider automático
 document.addEventListener('DOMContentLoaded', () => {
   const slides = document.querySelector('.slides');

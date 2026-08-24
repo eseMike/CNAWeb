@@ -25,7 +25,17 @@
           <span>55 5654-4639</span>
         </a>
 
-        <ul class="top-nav-menu">
+        <button
+          class="top-nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+        >
+          <span class="sr-only">Abrir menú de navegación</span>
+          <span class="top-nav-toggle-icon" aria-hidden="true"></span>
+        </button>
+
+        <ul class="top-nav-menu" id="primary-navigation">
           <li><a href="index.html">Inicio</a></li>
           <li><a href="#oferta-academica">Oferta Académica</a></li>
           <li><a href="#servicios">Servicios</a></li>
